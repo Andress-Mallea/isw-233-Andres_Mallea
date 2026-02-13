@@ -1,0 +1,48 @@
+/* Estilos del Bloque Name Card */
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.name-card {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    padding: 15px;
+    margin: 0px;
+    background-color: #a5a5a5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.name-card__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-right: 10px;
+    border: 3px solid #2980b9;
+}
+.name-card__content{
+    margin-top: 45px;
+}
+.name-card__name {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+.name-card__title{
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+.name-card__contacts{
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+.name-card__contacts-container{
+    margin: 0;
+}
