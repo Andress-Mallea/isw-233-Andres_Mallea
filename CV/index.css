@@ -1,0 +1,22 @@
+@import url("blocks/namecard/namecard.css");
+@import url("./blocks/sobre-mi/sobre-mi.css");
+@import url("modifiers/themes.css");
+@import './blocks/namecard/namecard.css';
+@import './blocks/sobre-mi/sobre-mi.css';
+@import './blocks/proyects/proyects.css';
+@import './blocks/articulos/articulos.css';
+@import './blocks/footer/footer.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-image: url('../assets/c.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+html {
+    scroll-behavior: smooth;
+}
