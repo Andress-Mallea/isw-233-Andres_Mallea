@@ -1,0 +1,46 @@
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+    margin: 0px;
+    background-color: rgba(3, 65, 166, 0.9); 
+    backdrop-filter: blur(8px); 
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    
+}
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.footer__name {
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+    font-family: 'Trebuchet MS';
+    color: #ffffff;
+}
+.footer__title{
+    opacity: 0.9;
+    margin-top: 5px;
+    color: #ffffff;
+    font-family:'Trebuchet MS';
+}
+.footer__contacts{
+    margin: 0;
+    color: #ffffff;
+    font-family:'Trebuchet MS';
+}
+.footer__contacts_content{
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family:'Trebuchet MS';
+}
+.footer__contacts-container{
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Courier New', monospace; 
+}
