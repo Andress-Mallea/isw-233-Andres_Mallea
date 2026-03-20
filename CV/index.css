@@ -1,0 +1,184 @@
+@import '/styles/blocks/namecard/namecard.css';
+@import '/styles/blocks/sobre-mi/sobre-mi.css';
+@import '/styles/blocks/proyects/proyects.css';
+@import '/styles/blocks/articulos/articulos.css';
+@import '/styles/blocks/footer/footer.css';
+@import '/styles/blocks/home/home.css';
+@import '/styles/blocks/abilities/abilities.css';
+@import '/styles/blocks/education/education.css';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url('/assets/c.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#app-root {
+    padding-bottom: 100px; 
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(3, 65, 166, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin: 0;
+}
+
+.nav__link {
+    display: block;
+    padding: 20px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav__link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid #4583ff;
+    color: #dcebf4;
+}
+
+
+.blog-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background: rgba(1, 96, 251, 0.2);
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.blog-controls button {
+    padding: 8px 15px;
+    background-color: #0160fb;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.blog-controls button:hover {
+    background-color: #4583ff;
+    transform: scale(1.05);
+}
+.blog-form-container {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.blog-input, .blog-select, .blog-textarea {
+    padding: 10px;
+    border: 2px solid #0341a6;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.blog-input { flex: 2; }
+.blog-select { flex: 1; }
+.blog-textarea { height: 100px; resize: none; }
+
+.taskbar {
+    position: fixed;
+    bottom: 50px; 
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.taskbar__start-button {
+    height: 100%;
+    padding: 0 15px;
+    background: linear-gradient(to bottom, #388e3c 0%, #4caf50 100%);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1rem;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.start-logo { width: 18px; filter: drop-shadow(1px 1px 1px black); }
+
+.taskbar__tray {
+    height: 100%;
+    background: linear-gradient(to bottom, #0972e3 0%, #0c8dea 100%);
+    border-left: 1px solid #1042af;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+}
+.blog-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+/* Esta clase la añade el IntersectionService automáticamente */
+.xp-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}

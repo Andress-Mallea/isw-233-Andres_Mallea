@@ -1,0 +1,229 @@
+.Sobre-mi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 93vw;
+    height: 90%;
+    padding: 15px;
+    margin: 20px;
+    background-color: #0160fb;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.715);
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-width: 10px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.Sobre-mi__encabezado {
+    display: flex;           /* Activa flexbox */
+    flex-direction: row;     /* Alineación horizontal */
+    justify-content: space-between; /* Empuja el título a la izquierda y botones a la derecha */
+    align-items: center;     /* Centra verticalmente */
+    width: 100%;             /* IMPORTANTE: debe ocupar todo el ancho */
+    box-sizing: border-box;  /* Evita que el padding desborde el ancho */
+    padding-bottom: 10px;    /* Espacio con el contenido de abajo */
+}
+.Sobre-mi__title{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #dcebf4;
+    font-family: 'Trebuchet MS';
+}
+.Sobre-mi__container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 95%;
+    background-color: #eae7d0;
+    margin-right: 0px;
+}
+.Sobre-mi__buttons{
+    display: flex;
+    gap: 8px;
+}
+.Sobre-mi__button {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid white;
+    display: inline-block;
+}
+.Sobre-mi__button--minimize,
+.Sobre-mi__button--maximize {
+    background-color: #4583ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-icon {
+    
+    object-fit:cover;
+    height: 80%;
+    width: 80%;
+    filter: invert(1);
+}
+
+.Sobre-mi__button--close {
+    color: #ffffff;
+    text-align: center;
+    background-color: #ff4444; 
+    position: relative;
+    font-size: 1.7rem;
+}
+.Sobre-mi__container-line{
+    margin-top: 30px;
+    margin-left: 15px;
+    border-left: 2px solid #000000;
+    height: 90%;
+}
+.Sobre-mi__container-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}   
+.Sobre-mi__container-left{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.Sobre-mi__content-title{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 36;
+    color: #0341a6;
+    font-family: 'Trebuchet MS';
+}
+.Sobre-mi__content{
+    line-height: 1.7;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.05rem;
+    color: #2c3e50;
+}
+.Sobre-mi__content-skills-and-hobbies{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.05rem;
+    color: #2c3e50;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.Sobre-mi__content-title-skills-and-hobbies{
+    margin-top: 0px;
+    
+}
+.Sobre-mi__content-not-first-line{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.05rem;;
+    color: #2c3e50;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/* index.css */
+
+.about-layout {
+    display: flex;
+    background: white;
+    min-height: 400px;
+}
+
+/* Sidebar Azul Estilo XP */
+.about-sidebar {
+    width: 200px;
+    background: linear-gradient(to bottom, #748aff 0%, #d2e1ff 100%);
+    padding: 20px 15px;
+    border-right: 1px solid #919b9c;
+}
+
+.sidebar-group {
+    margin-bottom: 25px;
+}
+
+.sidebar-title {
+    color: #003399;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.85rem;
+    color: #000;
+}
+
+.sidebar-list li {
+    margin-bottom: 8px;
+}
+
+/* Cuerpo Principal */
+.about-main {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-section-title {
+    color: #003399;
+    font-family: 'Tahoma', sans-serif;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    line-height: 1.6;
+    color: #333;
+    font-size: 1rem;
+}
+
+.experience-list {
+    padding-left: 20px;
+}
+
+.experience-list li {
+    margin-bottom: 12px;
+    color: #444;
+}
+/* index.css */
+
+/* Forzamos que el cuerpo de la ventana sea blanco/beige y no azul */
+.about-window .about-layout {
+    display: flex !important; /* Fuerza el modo horizontal */
+    flex-direction: row !important; 
+    background-color:  #eae7d0;
+    width: 100%;
+    min-height: 450px;
+    margin: 0;
+}
+
+.about-sidebar {
+    width: 220px;
+    background: linear-gradient(to bottom, #748aff 0%, #d2e1ff 100%);
+    padding: 20px 15px;
+    border-right: 1px solid #919b9c;
+    flex-shrink: 0; 
+}
+
+.about-main {
+    flex-grow: 1;
+    padding: 25px;
+    background: #eae7d0;
+    color: #000;
+}
+.about-window .Sobre-mi__container {
+    padding: 0 !important;
+    display: block !important;
+}

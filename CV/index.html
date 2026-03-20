@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Andres Mallea | Software Engineer SPA</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body class="layout">
+    <header class="main-header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="/" class="nav__link" data-link>Home</a></li>
+                <li><a href="/about" class="nav__link" data-link>Sobre Mí</a></li>
+                <li><a href="/abilities" class="nav__link" data-link>Habilidades</a></li>
+                <li><a href="/education" class="nav__link" data-link>Educación</a></li>
+                <li><a href="/proyectos" class="nav__link" data-link>Proyectos</a></li>
+                <li><a href="/blog" class="nav__link" data-link>Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="app-root" class="main-content"></main>
+    <div id="xp-taskbar" class="taskbar">
+        <div class="taskbar__start-button">
+            <img src="assets/XP-logo.png" alt="XP" class="start-logo">
+            <span>Start</span>
+        </div>
+        <div class="taskbar__apps">
+            <div class="taskbar__app-item"></div>
+        </div>
+        <div class="taskbar__tray">
+            <span id="clock">13:37 PM</span>
+        </div>
+    </div>
+    <custom-footer></custom-footer>
+
+    <template id="tpl-articulo">
+    <section class="articulo">
+        <div class="articulo__encabezado">
+            <h3 class="articulo__title"></h3> 
+            <div class="Sobre-mi__buttons">
+                         <span class="Sobre-mi__button Sobre-mi__button--minimize">
+                    <img src="assets/minimizar2.png" alt="Foto de Andres Mallea"  class="button-icon">
+                </span>
+                <span class="Sobre-mi__button Sobre-mi__button--maximize">
+                    <img src="assets/ventana.webp" alt="Foto de Andres Mallea"  class="button-icon">
+                </span>
+                        <span class="Sobre-mi__button Sobre-mi__button--close">X</span>
+                </div>
+            </div>
+        </div>
+        <div class="articulo__column-container">
+            <div class="articulo__description-container">
+                <p class="articulo__description"></p>
+            </div>
+        </div>
+        </section>
+</template>
+
+    <script type="module" src="/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+/* index.css */
+
+.education-container {
+    padding: 25px !important;
+    display: flex;
+    flex-direction: column !important; 
+    gap: 30 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+
+.edu-section__header {
+    color: #003399;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #003399; 
+    width: 100%;
+}
+
+.edu-divider {
+    height: 40px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.xp-card {
+    background: #ffffff;
+    border: 1px solid #919b9c;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%; 
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.xp-card:hover {
+    background: #f1f5fa;
+    border-color: #7da2ce;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.xp-card--highlight {
+    background: #fffef0; 
+    border-color: #e5c100;
+}
+
+.xp-card__icon-container {
+    flex-shrink: 0;
+}
+
+.xp-card__icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.xp-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.xp-card__title {
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.xp-card__subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.xp-card__info {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.xp-card__status {
+    color: #388e3c;
+    font-weight: bold;
+}

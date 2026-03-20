@@ -1,0 +1,58 @@
+.abilities-container {
+    padding: 30px;
+    flex-direction: column !important;
+}
+
+.abilities-subtitle {
+    color: #0341a6;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 5px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+    cursor: default;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    width: 55px;
+    height: 55px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+
+.skill-name {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+}
+.languages-content {
+    background-color: #f1f1f1; 
+    padding: 15px;
+    border-left: 4px solid #0341a6;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.languages-content p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}

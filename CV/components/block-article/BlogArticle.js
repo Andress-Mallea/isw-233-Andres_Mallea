@@ -1,0 +1,57 @@
+
+import { state } from '/services/StateManager.js';
+
+export class BlogArticle extends HTMLElement {
+    constructor() {
+        super();
+        this._articleData = null;
+    }
+    set data(value) {
+        this._articleData = value;
+        this.render();
+    }
+
+    connectedCallback() {
+        state.subscribe((favorites) => {
+            this.updateFavoriteUI(favorites);
+        });
+    }
+
+    render() {
+    if (!this._articleData) return;
+
+    const template = document.getElementById('tpl-articulo');
+    if (!template) {
+        console.error("No se encontró el template #tpl-articulo");
+        return;
+    }
+
+    const content = template.content.cloneNode(true);
+    const titleEl = content.querySelector('.articulo__title');
+    const descEl = content.querySelector('.articulo__description');
+    const photoEl = content.querySelector('.articulo__photo');
+
+    if (titleEl) titleEl.textContent = this._articleData.title;
+    if (descEl) descEl.textContent = this._articleData.desc;
+    if (photoEl) photoEl.src = this._articleData.img;
+    
+    const favBtn = content.querySelector('.articulo__fav-btn');
+    if (favBtn) {
+        favBtn.addEventListener('click', () => state.toggleFavorite(this._articleData.id));
+    }
+
+    this.innerHTML = '';
+    this.appendChild(content);
+    this.updateFavoriteUI(state.favorites);
+}
+
+    updateFavoriteUI(favorites) {
+        const btn = this.querySelector('.articulo__fav-btn');
+        if (btn && this._articleData) {
+            const isFav = favorites.includes(this._articleData.id);
+            isFav ? btn.classList.add('articulo__fav-btn--active') 
+                  : btn.classList.add('articulo__fav-btn--inactive');
+        }
+    }
+}
+customElements.define('blog-article', BlogArticle);

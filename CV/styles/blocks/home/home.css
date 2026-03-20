@@ -1,0 +1,56 @@
+/* CV/index.css */
+
+/* Login Card Style (Inspirado en tu imagen) */
+.login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-card {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.login-card__avatar-frame {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border: 3px solid rgba(255,255,255,0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.login-card__avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-card__name {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.login-card__button {
+    margin-top: 20px;
+    padding: 10px 40px;
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.main-header {
+    background: #0058e3; 
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
