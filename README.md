@@ -52,5 +52,8 @@ Se implementaron tres tipos de servicios de observación en la carpeta `services
 
 * **JavaScript (ES6+):** Uso de Módulos, Clases y Web Components nativos.
 * **CSS3:** Implementación de la metodología **BEM** (Block Element Modifier) para estilos escalables.
-* **LocalStorage:** Persistencia de datos para la funcionalidad de artículos favoritos, permitiendo que las preferencias del usuario se mantengan tras recargar la página.
+* **LocalStorage:** Persistencia de datos para la funcionalidad de artículos favoritos, permitiendo que las preferencias del usuario se mantengan tras
+*recargar la página.
+## Link De IA
+https://gemini.google.com/share/ec91c6a7c610
 
